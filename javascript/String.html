@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String类型</title>
+    <script>
+        /*
+        * 在javascript中，字符串是一组被引号（单引号或双引号）括起来的文本
+        * */
+        /*字符串的长度*/
+        var string1 = "This is a string";
+        var length = string1.length;
+        //alert("stringLenght:"+length);
+
+        /*查找某个字符在字符串中首次出现的位置indexOf(str,index)*/
+        var string2 = "_www.baidu.com";
+        var index = string2.indexOf("_");
+        var index1 = string2.indexOf(".",5);
+        //alert(index1);
+
+        /*返回指定位置的字符*/
+        var char = string2.charAt(0);
+        //alert(char);
+
+        /*把字符串转化为小写*/
+        var string3 = "SDJFLKS";
+        string3 = string3.toLowerCase();
+       // alert(string3);
+
+        /*把字符串转化为大写*/
+        string2 = string2.toUpperCase();
+        //alert(string2);
+
+        /*返回位于指定索引index1和index2之间的字符串，并且包括索引index1对应的字符，不包括索引index对应的字符*/
+        var string4 = "This is a javascript";
+        var str = string4.substring(4,9);
+        //alert(str);
+        //alert(str.length);
+
+        /*将字符串分割为字符串数组*/
+        var arr = string4.split(" ");
+        console.log(arr);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
